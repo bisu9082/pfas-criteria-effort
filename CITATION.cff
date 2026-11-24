@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software or the derived data, please cite the paper below."
+title: "PFAS aquatic criteria: support dependence of extreme-anchored derivation"
+abstract: >-
+  Analysis pipeline and derived data for a study of how aquatic water-quality
+  criteria for PFAS depend on the amount of toxicity testing behind them, and
+  what that dependence costs in a national surface-water monitoring record.
+type: software
+authors:
+  - family-names: Kim
+    given-names: Jeongyun
+    affiliation: "Department of Chemical and Biological Engineering, Seoul National University, Seoul, Republic of Korea"
+  - family-names: Yoo
+    given-names: Jin
+    affiliation: "CBRN Defense Research Institute, Seoul 06796, Republic of Korea"
+  - family-names: Kang
+    given-names: Ku
+    orcid: "https://orcid.org/0000-0001-8739-218X"
+    email: cbr6290@mnd.go.kr
+    affiliation: "CBRN Defense Research Institute, Seoul 06796, Republic of Korea"
+repository-code: "https://github.com/bisu9082/pfas-criteria-effort"
+license: MIT
+keywords:
+  - PFAS
+  - water quality criteria
+  - species sensitivity distribution
+  - predicted no-effect concentration
+  - ECOTOX
+  - Water Quality Portal
+  - reproducibility

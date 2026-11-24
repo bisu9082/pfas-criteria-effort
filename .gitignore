@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.out
+*.spl
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+
+# Never publish correspondence with journals: editor and referee
+# correspondence is confidential to the journal and its reviewers.
+response_to_reviewers*
+*decision_letter*
+*referee_report*
+cover_letter*

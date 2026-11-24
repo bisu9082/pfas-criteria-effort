@@ -1,0 +1,15 @@
+\begin{table}[htbp]\centering\scriptsize\setlength{\tabcolsep}{2.4pt}
+\caption{The derivation conventions in full. The assessment factor for C6 and C6$'$ follows the EU Technical Guidance ladder set by the number of trophic levels with an admissible long-term datum: 10 for three or more, 50 for two, 100 for one. For C6$'$ that count is taken from the screened pool, not from the unscreened compilation.}
+\label{tab:s1}
+\begin{tabular}{@{}l >{\raggedright\arraybackslash}p{0.34\textwidth} l >{\raggedright\arraybackslash}p{0.31\textwidth}@{}}\toprule
+Code & Statistic & AF & Note\\\midrule
+C1 & lowest value, any endpoint or duration & 1000 & reference case; target of published screening work\\
+C2 & lowest value, \textsf{LOEC} removed & 1000 & isolates an inadmissible endpoint type\\
+C3 & lowest acute \textsf{LC50}/\textsf{EC50}/\textsf{IC50} & 1000 & single endpoint type\\
+C4 & median acute value over records & 1000 & central, record-weighted\\
+C5 & median over species of species median acute & 1000 & central, species-weighted\\
+C6 & lowest chronic \textsf{NOEC} & 10/50/100 & EU TGD, factor by chronic trophic coverage\\
+C6$'$ & lowest \emph{apical} chronic \textsf{NOEC} of adequate duration & 10/50/100 & factor from the \emph{screened} pool\\
+C7a & lowest apical chronic species mean & --- & species mean chronic value\\
+C7b & fifth percentile of a log-normal SSD & --- & requires $\geq 5$ species\\
+\bottomrule\end{tabular}\end{table}

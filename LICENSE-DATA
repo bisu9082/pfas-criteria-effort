@@ -1,0 +1,13 @@
+The derived data tables in data/ and derived/ are made available under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+They are derived from two public sources, which are not redistributed here
+and which carry their own terms:
+
+  - US EPA ECOTOXicology Knowledgebase, ASCII release of 15 September 2026.
+    https://cfpub.epa.gov/ecotox/
+  - Water Quality Portal (USGS / US EPA / NWQMC).
+    https://www.waterqualitydata.us/
+
+Attribution for the derived tables should cite the accompanying paper.

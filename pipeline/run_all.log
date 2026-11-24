@@ -1,0 +1,677 @@
+============================================================================================
+v3 water: full WQP pull, detection status explicit
+============================================================================================
+  retrieved results                   117,034
+  matched a PFAS name list            107,846
+  after unit and QC screens           101,908
+    detections                         20,998   (20.6%)
+    non-detections                     80,910
+    resolve to a parent structure       59,990  (22 substances, 19,456 detections)
+    resolve to no parent structure      41,918  (25 names, 1,542 detections)
+  distinct stations                     1,523
+  F-ZERO: dropped 26 rows flagged as detections but reporting 0 ng/L
+  QC removed: 558 QC activity ids, 1,182 CON-flagged, 44 unusable condition
+  F-QC note: v2's water frame (m_ladder.pkl, 20,682 rows) is detections only
+             and contains no non-detects at all.
+
+-- F-GEO --
+   42 reporting organisations; 7 carry 80% of detections
+OrganizationFormalName
+USGS Pennsylvania Water Science Center                                 5256
+Minnesota Pollution Control Agency - Ambient Surface Water  (State)    2980
+USGS New Jersey Water Science Center                                   2013
+NJDEP Bureau of Freshwater and Biological Monitoring                   1992
+USGS Massachusetts Water Science Center                                1882
+Fl  Dept. of Environmental Protection, Central District                1760
+USGS New York Water Science Center                                     1040
+
+-- C1 (lowest value over all endpoints, AF 1000) --
+  C1        n= 87   primary (tests)      rho=-0.696 (p=7.6e-14)
+  C1        n= 87   sensitivity (rows)   rho=-0.784 (p=2.87e-19)
+==============================================================================
+v3 core  |  duration rule = r10
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 23   endpoint rho=-0.438 (p=0.0365)   criterion rho=-0.209 (p=0.338)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         55
+chronic      23
+acute         5
+judgement     4
+  no PNEC derivable: 55 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (r10)            n=  5  rho=-0.600  p=0.2848
+==============================================================================
+v3 core  |  duration rule = r10
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 23   endpoint rho=-0.438 (p=0.0365)   criterion rho=-0.209 (p=0.338)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         55
+chronic      23
+acute         5
+judgement     4
+  no PNEC derivable: 55 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (r10)            n=  5  rho=-0.600  p=0.2848
+
+============================================================================================
+The PFAS measured in surface water: can they be assessed at all?   (duration = r10)
+============================================================================================
+                            name  n_result  n_det  det_freq  det_median_ngL  n_records  chronic_tl  chronic_sp   route  n_sp_d
+                        PFOA ion      4364   2511      57.5             3.6       2673           3          28 chronic      28
+    Perfluorobutanesulfonic acid      3735   2197      58.8               3       1268           3           4 chronic       4
+          Perfluorohexanoic acid      3671   2114      57.6             3.6        372           2           2 chronic       2
+   Perfluorooctane sulfonic acid      4336   2092      48.2             3.6       3184           3          34 chronic      34
+         Perfluoroheptanoic acid      3773   2053      54.4             1.7         30           0           0    none     NaN
+          Perfluorobutanoic acid      3306   2041      61.7            5.04        251           2           2 chronic       2
+           Perfluorovaleric acid      3375   1891        56            4.12         15           0           0   acute     NaN
+    Perfluorohexanesulfonic acid      3872   1632      42.1             1.8        132           1           4 chronic       4
+          Perfluorononanoic acid      4332   1312      30.3            1.34        275           2           3 chronic       3
+          Perfluorodecanoic acid      3859    507      13.1             0.9        102           0           0   acute     NaN
+      Perfluorooctanesulfonamide      3362    306       9.1           0.581         20           1           1 chronic       1
+        Perfluoroundecanoic acid      3795    169      4.45            1.04         47           0           0    none     NaN
+        Perfluorododecanoic acid      3853    146      3.79               2        106           0           0    none     NaN
+6:2 Fluorotelomer sulfonate acid      1704    135      7.92               8         59           1           4 chronic       4
+       Perfluorotridecanoic acid      3708     70      1.89               2         70           0           0    none     NaN
+    3-perfluoropentyl propanoate       600     64      10.7               8          2           0           0    none     NaN
+       Perfluorobutylsulfonamide       127     59      46.5             0.8         19           0           0    none     NaN
+      Perfluorohexanesulfonamide       127     59      46.5             0.8         18           0           0    none     NaN
+3-Perfluoroheptylpropanoic acid         69     59      85.5               8          7           0           0   acute     NaN
+2-(N-methylperfluoro-1-octanesul      2207     20     0.906            69.5          1           0           0    none     NaN
+  Perfluoro(2-propoxypropanoate)      1807     11     0.609             3.2        287           3           4 chronic       4
+N-ethyl perfluoro-1-octanesulfon         8      8       100            24.4         57           0           0    none     NaN
+
+-- occurrence-weighted, 22 substances, 19,456 detections --
+   SSD-eligible (>=5 species, screened)    2/22   23.7% of detections
+   a PNEC is derivable                    13/22   86.4% of detections
+   NO PNEC derivable                       9/22   13.6% of detections
+
+-- eligibility vs testing effort, all 87 substances --
+   SSD-eligible: 5; exposure-variable ranks [1, 2, 3, 14, 25]
+   AUC = 0.924   p = 0.000582
+
+-- assessment-factor decomposition (C6_pub, exposure = n_tests) --
+  n = 59 substances
+  endpoint   slope -2.223 per decade (p=3.7e-09)
+  factor     slope -0.380 per decade (p=1.9e-09)
+  criterion  slope -1.843 per decade (p=5.6e-07)
+  the factor offsets 17% of the endpoint movement, 83% passes through
+  endpoint moves 6.3 log units over the observed exposure range
+  factor values in use: [10, 50, 100]  span 1.0 log units
+==================================================================================================
+LEAD RESULT  |  duration rule = r10  |  threshold >= 700 stations
+==================================================================================================
+  co-occurring substances                : 7
+  stations measuring all of them         : 500
+  detections in that block               : 11,394 (54.3% of all 20,998 detections)
+
+                         name  n_det  med  n_rec  chron_sp   route  crit_ngL  exceed
+       Perfluorobutanoic acid   1450  5.6    251         2 chronic     2e+03   0.069
+                     PFOA ion   1788  4.9   2673        28 chronic       100   0.559
+        Perfluorovaleric acid   1494  4.8     15         0   acute       NaN     NaN
+       Perfluorohexanoic acid   1734  4.5    372         2 chronic   4.5e+05       0
+Perfluorooctane sulfonic acid   1692  4.3   3184        34 chronic      60.9    1.65
+ Perfluorobutanesulfonic acid   1670  3.5   1268         4 chronic       100   0.659
+      Perfluoroheptanoic acid   1566  2.1     30         0    none       NaN     NaN
+
+  measured median concentration : 2.10 - 5.60 ng/L   (2.7-fold)
+  apical chronic species        : 0 - 34
+  ECOTOX records                : 15 - 3,184   (212-fold)
+  C6' criterion                 : 60.9 - 4.5e+05 ng/L   (7,389-fold)
+  detections in exceedance      : 1.7% -> 0.0%
+  NO PNEC derivable             : 1 of 7 (Perfluoroheptanoic acid), 1,566 detections = 13.7% of the block
+
+  -- threshold sweep --
+      min_st  subs  stations  detections  conc fold    crit fold    exceed span
+         400     9       367      11,850       4.1x      38,039x     10.4->0.0%
+         500     9       367      11,850       4.1x      38,039x     10.4->0.0%
+         600     8       463      12,321       2.9x      38,039x     10.1->0.0%
+         700     7       500      11,394       2.7x       7,389x      1.7->0.0%
+         750     3       657       6,055       1.3x       4,500x      0.7->0.0%
+
+
+-- C1 (lowest value over all endpoints, AF 1000) --
+  C1        n= 87   primary (tests)      rho=-0.696 (p=7.6e-14)
+  C1        n= 87   sensitivity (rows)   rho=-0.784 (p=2.87e-19)
+==============================================================================
+v3 core  |  duration rule = operational
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 33   endpoint rho=-0.621 (p=0.000117)   criterion rho=-0.506 (p=0.00264)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         50
+chronic      33
+judgement     3
+acute         1
+  no PNEC derivable: 50 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (operational)    n= 13  rho=-0.710  p=0.0066
+==============================================================================
+v3 core  |  duration rule = operational
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 33   endpoint rho=-0.621 (p=0.000117)   criterion rho=-0.506 (p=0.00264)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         50
+chronic      33
+judgement     3
+acute         1
+  no PNEC derivable: 50 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (operational)    n= 13  rho=-0.710  p=0.0066
+
+============================================================================================
+The PFAS measured in surface water: can they be assessed at all?   (duration = operational)
+============================================================================================
+                            name  n_result  n_det  det_freq  det_median_ngL  n_records  chronic_tl  chronic_sp   route  n_sp_d
+                        PFOA ion      4364   2511      57.5             3.6       2673           3          34 chronic      34
+    Perfluorobutanesulfonic acid      3735   2197      58.8               3       1268           3           7 chronic       7
+          Perfluorohexanoic acid      3671   2114      57.6             3.6        372           2           2 chronic       2
+   Perfluorooctane sulfonic acid      4336   2092      48.2             3.6       3184           3          47 chronic      47
+         Perfluoroheptanoic acid      3773   2053      54.4             1.7         30           1           2 chronic       2
+          Perfluorobutanoic acid      3306   2041      61.7            5.04        251           3           4 chronic       4
+           Perfluorovaleric acid      3375   1891        56            4.12         15           1           1 chronic       1
+    Perfluorohexanesulfonic acid      3872   1632      42.1             1.8        132           2           7 chronic       7
+          Perfluorononanoic acid      4332   1312      30.3            1.34        275           2           5 chronic       5
+          Perfluorodecanoic acid      3859    507      13.1             0.9        102           1           2 chronic       2
+      Perfluorooctanesulfonamide      3362    306       9.1           0.581         20           1           1 chronic       1
+        Perfluoroundecanoic acid      3795    169      4.45            1.04         47           1           1 chronic       1
+        Perfluorododecanoic acid      3853    146      3.79               2        106           1           1 chronic       1
+6:2 Fluorotelomer sulfonate acid      1704    135      7.92               8         59           1           4 chronic       4
+       Perfluorotridecanoic acid      3708     70      1.89               2         70           0           0    none     NaN
+    3-perfluoropentyl propanoate       600     64      10.7               8          2           0           0    none     NaN
+       Perfluorobutylsulfonamide       127     59      46.5             0.8         19           0           0    none     NaN
+      Perfluorohexanesulfonamide       127     59      46.5             0.8         18           0           0    none     NaN
+3-Perfluoroheptylpropanoic acid         69     59      85.5               8          7           0           0   acute     NaN
+2-(N-methylperfluoro-1-octanesul      2207     20     0.906            69.5          1           0           0    none     NaN
+  Perfluoro(2-propoxypropanoate)      1807     11     0.609             3.2        287           3           7 chronic       7
+N-ethyl perfluoro-1-octanesulfon         8      8       100            24.4         57           0           0    none     NaN
+
+-- occurrence-weighted, 22 substances, 19,456 detections --
+   SSD-eligible (>=5 species, screened)    6/22   50.1% of detections
+   a PNEC is derivable                    16/22   98.6% of detections
+   NO PNEC derivable                       6/22    1.4% of detections
+
+-- eligibility vs testing effort, all 87 substances --
+   SSD-eligible: 13; exposure-variable ranks [1, 2, 3, 4, 8, 9, 11, 14, 23, 25, 28, 28, 31]
+   AUC = 0.897   p = 1.57e-06
+
+-- assessment-factor decomposition (C6_pub, exposure = n_tests) --
+  n = 59 substances
+  endpoint   slope -2.223 per decade (p=3.7e-09)
+  factor     slope -0.380 per decade (p=1.9e-09)
+  criterion  slope -1.843 per decade (p=5.6e-07)
+  the factor offsets 17% of the endpoint movement, 83% passes through
+  endpoint moves 6.3 log units over the observed exposure range
+  factor values in use: [10, 50, 100]  span 1.0 log units
+==================================================================================================
+LEAD RESULT  |  duration rule = operational  |  threshold >= 700 stations
+==================================================================================================
+  co-occurring substances                : 7
+  stations measuring all of them         : 500
+  detections in that block               : 11,394 (54.3% of all 20,998 detections)
+
+                         name  n_det  med  n_rec  chron_sp   route  crit_ngL  exceed
+       Perfluorobutanoic acid   1450  5.6    251         4 chronic       430   0.069
+                     PFOA ion   1788  4.9   2673        34 chronic        94   0.615
+        Perfluorovaleric acid   1494  4.8     15         1 chronic     1e+07       0
+       Perfluorohexanoic acid   1734  4.5    372         2 chronic     9e+05       0
+Perfluorooctane sulfonic acid   1692  4.3   3184        47 chronic      44.7    3.25
+ Perfluorobutanesulfonic acid   1670  3.5   1268         7 chronic         2    66.3
+      Perfluoroheptanoic acid   1566  2.1     30         2 chronic  2.46e+04       0
+
+  measured median concentration : 2.10 - 5.60 ng/L   (2.7-fold)
+  apical chronic species        : 1 - 47
+  ECOTOX records                : 15 - 3,184   (212-fold)
+  C6' criterion                 : 2 - 1e+07 ng/L   (5,000,000-fold)
+  detections in exceedance      : 66.3% -> 0.0%
+
+  -- threshold sweep --
+      min_st  subs  stations  detections  conc fold    crit fold    exceed span
+         400     9       367      11,850       4.1x   5,000,000x     71.7->0.0%
+         500     9       367      11,850       4.1x   5,000,000x     71.7->0.0%
+         600     8       463      12,321       2.9x   5,000,000x     67.8->0.0%
+         700     7       500      11,394       2.7x   5,000,000x     66.3->0.0%
+         750     3       657       6,055       1.3x     450,000x     59.6->0.0%
+
+==============================================================================
+v3 core  |  duration rule = r10
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 23   endpoint rho=-0.438 (p=0.0365)   criterion rho=-0.209 (p=0.338)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         55
+chronic      23
+acute         5
+judgement     4
+  no PNEC derivable: 55 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (r10)            n=  5  rho=-0.600  p=0.2848
+==============================================================================
+v3 core  |  duration rule = operational
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 33   endpoint rho=-0.621 (p=0.000117)   criterion rho=-0.506 (p=0.00264)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         50
+chronic      33
+judgement     3
+acute         1
+  no PNEC derivable: 50 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (operational)    n= 13  rho=-0.710  p=0.0066
+================================================================================================
+Does complying with ECHA R.10 make the criterion more protective?
+================================================================================================
+  substances with a derivable C6' criterion under BOTH rules: 25
+    criterion RAISED by compliance (less protective): 8
+    criterion LOWERED by compliance (more protective): 4
+    unchanged: 13
+  median log10 change: +0.000 (1.00x)
+  Wilcoxon signed-rank on log10 ratio: W=25, p=0.2721
+
+  -- substances that are monitored, ranked by detections --
+                          name  n_det  sp_oper  sp_R10  AF_oper  AF_R10  crit_oper  crit_R10  log10_ratio
+                      PFOA ion   2511       34      28       10      10         94       100       0.0269
+  Perfluorobutanesulfonic acid   2197        7       4       10      10          2       100          1.7
+        Perfluorohexanoic acid   2114        2       2       50      50      9e+05     9e+05            0
+ Perfluorooctane sulfonic acid   2092       47      34       10      10       44.7      60.9        0.134
+        Perfluorobutanoic acid   2041        4       2       10      50        430     2e+03        0.668
+  Perfluorohexanesulfonic acid   1632        7       4       50     100       23.7      11.8       -0.301
+        Perfluorononanoic acid   1312        5       3       50      50        160       160            0
+    Perfluorooctanesulfonamide    306        1       1      100     100       11.5      11.5            0
+6:2 Fluorotelomer sulfonate ac    135        4       4      100     100        100       100            0
+Perfluoro(2-propoxypropanoate)     11        7       4       10      10        4.5       4.5            0
+
+  -- substances that LOSE a derivable criterion under R.10 --
+     5 substances; 2,368 detections (11.3% of all detections)
+                    name  n_det  n_rec  sp_oper  sp_R10
+ Perfluoroheptanoic acid   2053     30        2       0
+Perfluoroundecanoic acid    169     47        1       0
+Perfluorododecanoic acid    146    106        1       0
+
+  -- the species-list truncation, on substances with an SSD under both rules --
+                          name  sp_oper  sp_R10  sd_d_op  sd_d_r10  HC5_d_op  HC5_d_r10    dsd   dHC5
+O=C(NC(=O)c1c(F)cccc1F)Nc1cc(C  +15.000 +14.000   +0.537    +0.130    -3.661     -2.867 -0.407 +0.794
+                      PFOA ion  +34.000 +28.000   +1.376    +1.296    -1.949     -1.825 -0.081 +0.124
+                O=C(O)C(F)(F)F  +12.000 +12.000   +0.921    +0.921    +0.589     +0.589 +0.000 +0.000
+O=C(O)CC(F)(F)C(F)(F)C(F)(F)C(   +6.000  +5.000   +0.387    +0.579    -0.486     -1.012 +0.192 -0.526
+ Perfluorooctane sulfonic acid  +47.000 +34.000   +1.333    +1.391    -2.456     -2.529 +0.058 -0.073
+
+     species lost: median 1
+     change in fitted sd : median +0.000 log10
+     change in HC5       : median +0.000 log10  (1.00x)
+==============================================================================
+v3 core  |  duration rule = r10
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 23   endpoint rho=-0.438 (p=0.0365)   criterion rho=-0.209 (p=0.338)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         55
+chronic      23
+acute         5
+judgement     4
+  no PNEC derivable: 55 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (r10)            n=  5  rho=-0.600  p=0.2848
+============================================================================================
+EXCEEDANCE LADDER  |  rule = r10
+============================================================================================
+  substances every convention can assess : 2
+  detections in that common subset       : 4,603
+  stations                               : 907
+  [PFOA ion, Perfluorooctane sulfonic a]
+
+   conv   median crit ng/L   % detections above  % stations w/ any
+     C1              0.001                100.0              100.0
+     C2              0.001                100.0              100.0
+     C3               1.27                 83.8               97.5
+     C4           8.83e+04                  0.0                0.0
+     C5           1.56e+05                  0.0                0.0
+     C6               25.4                 45.0               79.3
+    C6p               80.4                  1.2                3.2
+    C7b           8.96e+03                  0.2                0.8
+
+  exceedance spans 100.0% -> 0.0% on derivation choice alone
+  median criterion spans 8.2 orders of magnitude
+  the two routes agencies use: C6' 80.4 ng/L (1.2% of detections, 3.2% of stations) vs C7b 8.96e+03 ng/L (0.2%, 0.8%)
+     unscreened C6 for comparison: 45.0% of detections
+     C1 -> C2 (dropping LOEC): 100.0% -> 100.0%
+==============================================================================
+v3 core  |  duration rule = operational
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 33   endpoint rho=-0.621 (p=0.000117)   criterion rho=-0.506 (p=0.00264)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         50
+chronic      33
+judgement     3
+acute         1
+  no PNEC derivable: 50 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (operational)    n= 13  rho=-0.710  p=0.0066
+============================================================================================
+EXCEEDANCE LADDER  |  rule = operational
+============================================================================================
+  substances every convention can assess : 6
+  detections in that common subset       : 9,755
+  stations                               : 969
+  [PFOA ion, Perfluoro(2-propoxypropano, Perfluorobutanesulfonic ac, Perfluorohexanesulfonic ac, Perfluorononanoic acid, Perfluorooctane sulfonic a]
+
+   conv   median crit ng/L   % detections above  % stations w/ any
+     C1             0.0075                 99.1              100.0
+     C2               0.01                 99.1              100.0
+     C3           1.49e+03                 39.6               91.2
+     C4           1.13e+05                  0.0                0.0
+     C5           1.65e+05                  0.0                0.0
+     C6                6.7                 40.7               82.2
+    C6p               34.2                 15.3               49.2
+    C7b           5.77e+03                  4.8               19.7
+
+  exceedance spans 99.1% -> 0.0% on derivation choice alone
+  median criterion spans 7.3 orders of magnitude
+  the two routes agencies use: C6' 34.2 ng/L (15.3% of detections, 49.2% of stations) vs C7b 5.77e+03 ng/L (4.8%, 19.7%)
+     unscreened C6 for comparison: 40.7% of detections
+     C1 -> C2 (dropping LOEC): 99.1% -> 99.1%
+==============================================================================
+v3 core  |  duration rule = operational
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 33   endpoint rho=-0.621 (p=0.000117)   criterion rho=-0.506 (p=0.00264)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         50
+chronic      33
+judgement     3
+acute         1
+  no PNEC derivable: 50 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (operational)    n= 13  rho=-0.710  p=0.0066
+==============================================================================================
+ROBUSTNESS  |  duration rule = operational
+==============================================================================================
+
+[1] as reported, and the chain-length confound
+  C6$'$ EU-TGD apical + duration     rho=-0.506  partial|nC=-0.515  (rho(log n, nC)=-0.10, n=33)
+  C7a lowest apical SMCV             rho=-0.626  partial|nC=-0.648  (rho(log n, nC)=-0.03, n=36)
+  C7b SSD fifth percentile           rho=-0.710  partial|nC=-0.703  (rho(log n, nC)=-0.22, n=13)
+
+[2] alternative effort variables
+  C6$'$ EU-TGD apical + duration     tests=-0.506  rows=-0.583  collapsed=-0.509
+  C7a lowest apical SMCV             tests=-0.626  rows=-0.655  collapsed=-0.603
+  C7b SSD fifth percentile           tests=-0.710  rows=-0.703  collapsed=-0.619
+
+[3] dropping the three non-OECD-PFAS parents
+  C6$'$ EU-TGD apical + duration     all=-0.506  PFAS-only=-0.506  (n 33 -> 33)
+  C7a lowest apical SMCV             all=-0.626  PFAS-only=-0.626  (n 36 -> 36)
+  C7b SSD fifth percentile           all=-0.710  PFAS-only=-0.710  (n 13 -> 13)
+
+[4] bootstrap 95% CI, fixed seed, 5000 draws
+  C6$'$ EU-TGD apical + duration     rho=-0.506  CI=[-0.75, -0.17]  n=33
+  C7a lowest apical SMCV             rho=-0.626  CI=[-0.83, -0.31]  n=36
+  C7b SSD fifth percentile           rho=-0.710  CI=[-0.90, -0.29]  n=13
+
+[5] permutation null for the SSD set
+  n=13  observed -0.710;  null mean +0.001 sd 0.289;  95% band [-0.56, +0.56];  P=0.0039
+
+[6] C1 exceedance: leave one reporting organisation out
+  full set, detections basis            76.88%
+     (v2, with the AF divisor omitted:  24.41%)
+  leave-one-organisation-out, 8 largest [75.60, 78.55]
+  largest contributor supplies          26.1% of detections
+  one median per station x substance    77.33%
+  over ALL retrieved results            24.93%  (non-detections counted as not exceeding)
+  +/-10% multiplicative noise, 200 reps  mean 76.91%  95% range [76.83, 76.98]
+==============================================================================
+v3 core  |  duration rule = r10
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 23   endpoint rho=-0.438 (p=0.0365)   criterion rho=-0.209 (p=0.338)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         55
+chronic      23
+acute         5
+judgement     4
+  no PNEC derivable: 55 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (r10)            n=  5  rho=-0.600  p=0.2848
+==============================================================================================
+ROBUSTNESS  |  duration rule = r10
+==============================================================================================
+
+[1] as reported, and the chain-length confound
+  C6$'$ EU-TGD apical + duration     rho=-0.209  partial|nC=-0.171  (rho(log n, nC)=-0.31, n=23)
+  C7a lowest apical SMCV             rho=-0.474  partial|nC=-0.506  (rho(log n, nC)=-0.10, n=29)
+  C7b SSD fifth percentile           rho=-0.600  partial|nC=-0.954  (rho(log n, nC)=-0.15, n=5)
+
+[2] alternative effort variables
+  C6$'$ EU-TGD apical + duration     tests=-0.209  rows=-0.203  collapsed=-0.239
+  C7a lowest apical SMCV             tests=-0.474  rows=-0.515  collapsed=-0.477
+  C7b SSD fifth percentile           tests=-0.600  rows=-0.600  collapsed=-0.600
+
+[3] dropping the three non-OECD-PFAS parents
+  C6$'$ EU-TGD apical + duration     all=-0.209  PFAS-only=-0.209  (n 23 -> 23)
+  C7a lowest apical SMCV             all=-0.474  PFAS-only=-0.474  (n 29 -> 29)
+  C7b SSD fifth percentile           all=-0.600  PFAS-only=-0.600  (n 5 -> 5)
+
+[4] bootstrap 95% CI, fixed seed, 5000 draws
+  C6$'$ EU-TGD apical + duration     rho=-0.209  CI=[-0.58, +0.20]  n=23
+  C7a lowest apical SMCV             rho=-0.474  CI=[-0.79, -0.07]  n=29
+  C7b SSD fifth percentile           rho=-0.600  CI=[-1.00, +0.25]  n=5
+
+[5] permutation null for the SSD set
+  n=5  observed -0.600;  null mean -0.001 sd 0.500;  95% band [-0.90, +0.90];  P=0.1749
+
+[6] C1 exceedance: leave one reporting organisation out
+  full set, detections basis            76.88%
+     (v2, with the AF divisor omitted:  24.41%)
+  leave-one-organisation-out, 8 largest [75.60, 78.55]
+  largest contributor supplies          26.1% of detections
+  one median per station x substance    77.33%
+  over ALL retrieved results            24.93%  (non-detections counted as not exceeding)
+  +/-10% multiplicative noise, 200 reps  mean 76.91%  95% range [76.83, 76.98]
+========================================================================================
+THE OPERATIVE CHANNEL  (n = 1,175 chemicals with >= 5 species)
+========================================================================================
+  rho(HC5, log records ) = -0.1558   p = 8.01e-08
+  rho(HC5, log species ) = -0.2411   p = 5.31e-17
+
+  partial(species, HC5 | records) = -0.2054  p = 1.17e-12   <- survives
+  partial(records, HC5 | species) = +0.0881  p = 0.00252   <- SIGN REVERSES
+  A single latent effort factor measured with differential error would
+  attenuate both partials; it cannot reverse one.  The reversal is
+  produced by estimator structure, and is predicted a priori:
+    partial(replication depth, sd  | species) = -0.1223  p = 2.63e-05
+    partial(replication depth, mu  | species) = +0.0484  p = 0.0974
+    partial(replication depth, HC5 | species) = +0.0980  p = 0.000764
+  i.e. replication within species shrinks the between-species SD
+  estimate, which RAISES the HC5 -- the opposite sign to adding species.
+
+========================================================================================
+F-STRAT: the three-stratum table does not reproduce; use pooled partials
+========================================================================================
+  hand-chosen strata, for the record (cut-point dependent):
+    [5-7] n=481 rho=+0.057 p=0.215 | [8-14] n=337 rho=+0.184 p=0.001 | [15-+] n=357 rho=-0.174 p=0.001
+    [5-6] n=366 rho=+0.040 p=0.446 | [7-10] n=320 rho=+0.192 p=0.001 | [11-+] n=489 rho=-0.166 p=0.000
+  -> significant in two of three with OPPOSITE signs.  Not publishable.
+
+  pooled over 18 exact-species-count strata (n >= 10 each):
+    rho(records, HC5 | species) = +0.1161  95% CI [+0.052, +0.179]
+  species effect within record-count quartiles: -0.149, -0.146, -0.118, -0.331
+    pooled rho(species, HC5 | records) = -0.1873  95% CI [-0.242, -0.131]   <- survives in every stratum
+
+========================================================================================
+F-DECOMP: what the species slope is made of
+========================================================================================
+  between-chemical slope, HC5 ~ log10(species) : -1.2084 per decade
+    after c4 small-sample SD correction        : -1.1516   -> c4 explains 4.7%
+    within-chemical rarefaction (235 chemicals >= 20 species,
+      chemical fixed effects, 60 draws at s = 5/8/12/20)
+      slope = -0.1626 (se 0.0108)   -> estimator sample size = 13.5%
+        mean rarefied HC5 at s =  5 : -1.5838
+        mean rarefied HC5 at s = 20 : -1.6785
+      a shorter species list gives a HIGHER HC5 -- data-poor substances
+      are UNDER-protected, and c4 fixes only a twentieth of it.
+    restricted to the  50 most-tested species (n =  805) : rho = -0.2367, partial | records = -0.1242
+    restricted to the 100 most-tested species (n =  950) : rho = -0.2055, partial | records = -0.1471
+    restricted to the 200 most-tested species (n = 1048) : rho = -0.2171, partial | records = -0.1357
+      -> species-pool composition explains essentially none of it.
+
+========================================================================================
+F-MED: restoring the hazard-attention statement with a LEGITIMATE control
+========================================================================================
+  40 independent splits, n = 1,214 chemicals with >= 10 records
+    total rho(depth-equalised minimum, log n)      -0.1609  split sd 0.0063
+    partial | held-out within-chemical SD (mediator) -0.0284  split sd 0.0137
+    partial | held-out hazard level  (legitimate)   -0.1014  split sd 0.0206   95% CI [-0.158, -0.045]
+    the legitimate control leaves 63% of the total.
+  Conditioning on within-chemical SD conditions on a descendant of
+  effort, so the near-zero partial understates the direct effect.
+
+  F-FILL: rho(log n, within-chemical SD)
+    with fillna(0) over 1,266 singleton chemicals (26.6% of 4,757) : +0.7829   <- as published
+    on n >= 5, no imputation (n = 1,977)            : +0.3312   <- correct
+    on n >= 2, no imputation (n = 3,491)            : +0.4759
+
+========================================================================================
+The two channels, at n = 1,175 instead of n = 13
+========================================================================================
+  exposure = log records   d(mu) = -0.3323  z*d(sd) = -0.2680  total = -0.6003
+      sigma share = 44.6%   bootstrap 95% CI [35, 57]   replicates > 100%: 0.0%
+  exposure = log species   d(mu) = -0.6428  z*d(sd) = -0.5656  total = -1.2084
+      sigma share = 46.8%   bootstrap 95% CI [40, 55]   replicates > 100%: 0.0%
+
+========================================================================================
+F-SPEC: on the PFAS SSD set the partials run the OTHER way
+========================================================================================
+==============================================================================
+v3 core  |  duration rule = operational
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 33   endpoint rho=-0.621 (p=0.000117)   criterion rho=-0.506 (p=0.00264)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         50
+chronic      33
+judgement     3
+acute         1
+  no PNEC derivable: 50 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (operational)    n= 13  rho=-0.710  p=0.0066
+  [operational] n = 13
+     rho(records) = -0.703 (p=0.00732)   rho(species) = -0.386 (p=0.193)
+     partial(species|records) = +0.458   partial(records|species) = -0.729
+==============================================================================
+v3 core  |  duration rule = r10
+==============================================================================
+
+-- C6 ladder, AF taken from the SAME screened pool (F-AF1) --
+  C6_pub    n= 59   endpoint rho=-0.677 (p=4.05e-09)   criterion rho=-0.611 (p=2.78e-07)
+  C6_ai     n= 52   endpoint rho=-0.629 (p=5.85e-07)   criterion rho=-0.538 (p=3.9e-05)
+  C6_ap     n= 47   endpoint rho=-0.766 (p=3.41e-10)   criterion rho=-0.679 (p=1.53e-07)
+  C6_prime  n= 23   endpoint rho=-0.438 (p=0.0365)   criterion rho=-0.209 (p=0.338)
+
+-- EU TGD derivability (F-DRV) --
+route
+none         55
+chronic      23
+acute         5
+judgement     4
+  no PNEC derivable: 55 of 87 substances
+
+-- C7 SSD --
+  no duration filter                 n= 16  rho=-0.770  p=0.0005
+  duration-filtered (r10)            n=  5  rho=-0.600  p=0.2848
+  [r10] n = 5
+     rho(records) = -0.600 (p=0.285)   rho(species) = -0.600 (p=0.285)
+     partial(species|records) = +0.025   partial(records|species) = +0.025
+  So the manuscript is not 'backwards' on its own data: n = 13 cannot
+  separate the channels.  The correction is one of SPECIFICATION --
+  an SSD's sample size is its species count -- demonstrated at n = 1,175.

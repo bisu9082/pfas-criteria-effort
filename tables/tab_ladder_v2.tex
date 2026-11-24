@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.0pt}
+\caption{Derived criteria and exceedance. The left block applies each convention, under ECHA R.10 durations, to every monitored substance it can assess. \emph{Each row's percentage is over the detections of the substances that convention can assess}, given as $n_{\mathrm{det}}$; the record holds \num{20998} detections in all, at 1\,044 stations with any detection. The right block restricts all conventions to the substances every one can assess: under R.10 only two qualify, so it is given under the operational rule, where 6 substances and \num{9755} detections remain. Assessment factors come from the same screened pool as the endpoint they divide; PNEC is the median across substances. Column \emph{det.} is the percentage of detections above the criterion and \emph{stat.} the percentage of stations with at least one such detection.}
+\label{tab:ladder}
+\begin{tabular}{@{}ll rrrr rrr@{}}
+\toprule
+& & \multicolumn{4}{c}{own set, R.10} & \multicolumn{3}{c}{common subset ($n=6$), oper.}\\
+\cmidrule(lr){3-6}\cmidrule(lr){7-9}
+& convention & subs. & $n_{\mathrm{det}}$ & PNEC & det. & PNEC & det. & stat.\\
+& & & & (ng/L) & (\%) & (ng/L) & (\%) & (\%)\\
+\midrule
+C1 & lowest value, any endpoint & 22 & 19,456 & 4.44 & 76.88 & \num{7.50e-03} & 99.06 & 100.00\\
+C3 & lowest acute value & 18 & 17,018 & 1\,730 & 22.82 & 1\,488 & 39.57 & 91.23\\
+C5 & median acute, by species & 18 & 17,018 & \num{5.42e+04} & 0.12 & \num{1.65e+05} & 0.00 & 0.00\\
+C6 & lowest chronic NOEC / AF & 19 & 19,313 & 160 & 23.98 & 6.7 & 40.74 & 82.25\\
+C6$'$ & as C6, apical, chronic & 10 & 14,351 & 100 & 1.90 & 34.2 & 15.25 & 49.23\\
+C7a & lowest apical SMCV / 10 & 10 & 14,351 & 1\,692 & 0.33 & 218 & 13.80 & 49.12\\
+C7b & SSD fifth percentile & 2 & 4,603 & 8\,962 & 0.17 & 5\,771 & 4.81 & 19.71\\
+\bottomrule
+\end{tabular}
+\end{table}

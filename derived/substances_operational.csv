@@ -1,0 +1,23 @@
+parent,n_result,n_det,n_station,det_median_ngL,det_freq,name,cas,n_records,route,AF_tgd,C_acute,acute_tl,chronic_tl,chronic_sp,C6_prime,AF_C6_prime,n_sp_d,HC5_d,ssd_eligible
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,4364,2511,1395,3.6,57.538955087076076,PFOA ion,335-67-1,2673,chronic,10.0,,3,3,34,-3.026872146400301,10.0,34.0,-1.9487511236181687,True
+O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3735,2197,1278,3.0,58.82195448460509,Perfluorobutanesulfonic acid,375-73-5,1268,chronic,10.0,,3,3,7,-4.698970004336019,10.0,7.0,-5.20030358812077,True
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3671,2114,1258,3.6,57.586488695178424,Perfluorohexanoic acid,307-24-4,372,chronic,50.0,,2,2,2,1.6532125137753435,50.0,2.0,,False
+O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,4336,2092,1388,3.6,48.247232472324725,Perfluorooctane sulfonic acid,1763-23-1,3184,chronic,10.0,,3,3,47,-3.349692476868064,10.0,47.0,-2.4561602672390417,True
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3773,2053,1269,1.7,54.41293400477074,Perfluoroheptanoic acid,375-85-9,30,chronic,100.0,,0,1,2,0.3909351071033791,100.0,2.0,,False
+O=C(O)C(F)(F)C(F)(F)C(F)(F)F,3306,2041,1238,5.04,61.7362371445856,Perfluorobutanoic acid,375-22-4,251,chronic,10.0,,3,3,4,-2.3665315444204134,10.0,4.0,,False
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3375,1891,1275,4.12,56.02962962962963,Perfluorovaleric acid,2706-90-3,15,chronic,100.0,,3,1,1,3.0,100.0,1.0,,False
+O=S(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3872,1632,1311,1.8,42.14876033057851,Perfluorohexanesulfonic acid,355-46-4,132,chronic,50.0,,1,2,7,-2.9270152553720696,50.0,7.0,-2.0556228049273684,True
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,4332,1312,1400,1.34,30.28624192059095,Perfluorononanoic acid,375-95-1,275,chronic,50.0,,2,2,5,-2.096910013008056,50.0,5.0,-2.0945075052855313,True
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3859,507,1351,0.9,13.138118683596787,Perfluorodecanoic acid,335-76-2,102,chronic,100.0,,3,1,2,-2.011887159731648,100.0,2.0,,False
+NS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3362,306,1279,0.581,9.1017251635931,Perfluorooctanesulfonamide,754-91-6,20,chronic,100.0,,1,1,1,-2.939302159646388,100.0,1.0,,False
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3795,169,1334,1.04,4.453227931488801,Perfluoroundecanoic acid,2058-94-8,47,chronic,100.0,,0,1,1,-2.0305840876460186,100.0,1.0,,False
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3853,146,1333,2.0,3.789255125875941,Perfluorododecanoic acid,307-55-1,106,chronic,100.0,,0,1,1,-2.0048037084028207,100.0,1.0,,False
+O=S(=O)(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,1704,135,717,8.0,7.922535211267606,6:2 Fluorotelomer sulfonate acid,27619-97-2,59,chronic,100.0,,1,1,4,-2.0,100.0,4.0,,False
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,3708,70,1339,2.0,1.8878101402373246,Perfluorotridecanoic acid,72629-94-8,70,none,,,0,0,0,,,,,False
+O=C(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,600,64,179,8.0,10.666666666666666,3-perfluoropentyl propanoate,914637-49-3,2,none,,,1,0,0,,,,,False
+NS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,127,59,62,0.8,46.45669291338583,Perfluorobutylsulfonamide,30334-69-1,19,none,,,1,0,0,,,,,False
+NS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,127,59,62,0.8,46.45669291338583,Perfluorohexanesulfonamide,41997-13-1,18,none,,,1,0,0,,,,,False
+O=C(O)CCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,69,59,19,8.0,85.5072463768116,3-Perfluoroheptylpropanoic acid (7:3 FTCA),812-70-4,7,acute,1000.0,-3.3979400086720375,3,0,0,,,,,False
+CN(CCO)S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,2207,20,892,69.55,0.9062075215224287,2-(N-methylperfluoro-1-octanesulfonamido)-ethanol,24448-09-7,1,none,,,0,0,0,,,,,False
+O=C(O)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F,1807,11,523,3.2,0.6087437742114001,Perfluoro(2-propoxypropanoate),13252-13-6,287,chronic,10.0,,2,3,7,-4.346787486224656,10.0,7.0,-3.942928099476997,True
+CCNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,8,8,4,24.35,100.0,N-ethyl perfluoro-1-octanesulfonamide,4151-50-2,57,none,,,2,0,0,,,,,False

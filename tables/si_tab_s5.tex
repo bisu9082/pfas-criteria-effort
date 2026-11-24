@@ -1,0 +1,12 @@
+\begin{table}[htbp]\centering\scriptsize\setlength{\tabcolsep}{2.4pt}
+\caption{Controlling a mediator against controlling a confounder. The depth-equalised minimum is taken from a random half of each chemical's records and the control estimated from the held-out half, over 40 independent splits. It is the exact expectation of the minimum of $k$ records drawn without replacement, not a single realisation. Because each chemical is split in two, a chemical enters at depth $k$ only if it carries at least $2k$ records, so $n$ here is smaller at a given $k$ than in Fig.~5B, where no split is taken and the requirement is $k$ records. Conditioning on the within-chemical spread, a descendant of testing effort, removes the association; conditioning on an independently estimated hazard level leaves \hazShareLo{} to \hazShareHi{}\,\% of the total, depending on the depth $k$, with every interval excluding zero.}
+\label{tab:s5}
+\begin{tabular}{rrrrrrr}\toprule
+$k$ & $n$ & total $\rho$ & $\mid$ spread (mediator) & $\mid$ hazard & 95\,\% CI & split s.d.\\\midrule
+3 & 1,748 & $-0.183$ & $-0.032$ & $-0.131$ & $[-0.178,\,-0.084]$ & 0.018\\
+4 & 1,422 & $-0.143$ & $-0.026$ & $-0.098$ & $[-0.150,\,-0.046]$ & 0.018\\
+5 & 1,214 & $-0.161$ & $-0.028$ & $-0.101$ & $[-0.158,\,-0.045]$ & 0.021\\
+6 & 1,047 & $-0.158$ & $-0.022$ & $-0.130$ & $[-0.191,\,-0.070]$ & 0.016\\
+8 & 828 & $-0.200$ & $-0.067$ & $-0.126$ & $[-0.194,\,-0.058]$ & 0.019\\
+10 & 715 & $-0.218$ & $-0.085$ & $-0.122$ & $[-0.196,\,-0.049]$ & 0.022\\
+\bottomrule\end{tabular}\end{table}

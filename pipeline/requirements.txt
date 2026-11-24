@@ -1,0 +1,7 @@
+# Pinned to the versions the deposited results were produced with.
+numpy>=1.26,<3
+pandas>=2.2,<4
+scipy>=1.11,<2
+matplotlib>=3.8,<4
+pyarrow>=15
+rdkit>=2024.3
