@@ -18,7 +18,12 @@ authors:
     orcid: "https://orcid.org/0000-0001-8739-218X"
     email: cbr6290@mnd.go.kr
     affiliation: "CBRN Defense Research Institute, Seoul 06796, Republic of Korea"
+doi: "10.5281/zenodo.24487897"
 repository-code: "https://github.com/bisu9082/pfas-criteria-effort"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24487897"
+    description: "Concept DOI, resolving to the newest archived version"
 license: MIT
 keywords:
   - PFAS

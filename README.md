@@ -1,5 +1,7 @@
 # Support dependence of PFAS aquatic water-quality criteria
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24487897.svg)](https://doi.org/10.5281/zenodo.24487897)
+
 Code and derived data for:
 
 > Kim, J.\*, Yoo, J.\*, Kang, K. **Co-occurring PFAS receive aquatic criteria
@@ -75,6 +77,13 @@ cannot test the specification. If a duration rule, a trophic assignment or an
 endpoint-admissibility rule is wrong, every number derived from it is
 internally consistent and the audit passes. Several such defects were found
 during this work, and none of them was found by the audit.
+
+## Citing this repository
+
+Archived on Zenodo. Cite the concept DOI
+[10.5281/zenodo.24487897](https://doi.org/10.5281/zenodo.24487897), which
+always resolves to the newest archived version, rather than a version DOI.
+`CITATION.cff` carries the same metadata in machine-readable form.
 
 ## Licence
 
