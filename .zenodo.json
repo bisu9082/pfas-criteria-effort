@@ -2,7 +2,7 @@
   "title": "PFAS aquatic criteria: support dependence of extreme-anchored derivation",
   "description": "<p>Analysis pipeline and derived data for a study of how aquatic water-quality criteria for PFAS depend on the amount of toxicity testing behind them, and what that dependence costs in a national surface-water monitoring record.</p><p>Criteria are derived under nine conventions from one curated ECOTOX extract and joined to 117,034 Water Quality Portal results from 1,523 United States stations. On the six substances every convention can assess, 286 of 969 monitoring stations change compliance status on the derivation choice alone, with no change in a single measured concentration.</p><p><code>python pipeline/run_all.py</code> regenerates every figure, every table and the macro file of repeated numbers from the deposited data in one command.</p>",
   "upload_type": "software",
-  "license": "MIT",
+  "license": "mit",
   "access_right": "open",
   "creators": [
     {
